@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -34,9 +34,9 @@ body {
 nav {
     width: 415px;
     display: flex;
-    gap: 22px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
 
 nav > a {
@@ -179,21 +179,35 @@ footer > p {
     color: #DF6062;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
     .container_header {
-        height: 190px;
+        height: 120px;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
     }
     .container {
-        height: 180px;
+        height: 120px;
     }
     .hero {
-        height: 625px;
+        height: 225px;
     }
     .hero > div {
-        padding: 75px 0;
+        padding: 15px 0;
     }
-
+    .hero_title {
+        font-size: 26px;
+    }
+    .hero_detail {
+        font-size: 18px;
+    }
+    .logo {
+        font-size: 15px;
+    }
+    nav {
+        font-size: 12px;
+    }
     footer {
-        height: 190px;
+        height: 210px;
     }
 }
