@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-    /*width: 1920px;*/
     height: 71px;
     background: #1A1A2E;
 }
@@ -20,8 +19,9 @@ body {
     width: 95%;
     height: 71px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .logo {
@@ -35,6 +35,8 @@ nav {
     width: 415px;
     display: flex;
     gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav > a {
@@ -168,10 +170,30 @@ footer > p {
 
 .footer_nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
 }
 .footer_nav > a {
     text-decoration: none;
     color: #DF6062;
+}
+
+@media (max-width: 360px) {
+    .container_header {
+        height: 190px;
+    }
+    .container {
+        height: 180px;
+    }
+    .hero {
+        height: 625px;
+    }
+    .hero > div {
+        padding: 75px 0;
+    }
+
+    footer {
+        height: 190px;
+    }
 }
