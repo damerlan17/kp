@@ -1,3 +1,4 @@
+/* |||| header, nav, body, footer |||||||Хотел в базовый шаблон сделать но адапивгость слетает( ||||||||||||||||||||| */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +25,11 @@ body {
     justify-content: space-between;
 }
 
+.container_width {
+    margin: 0 auto;
+    width: 95%;
+}
+
 .logo {
     color: #ff6b6b;
     text-decoration: none;
@@ -36,7 +42,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 nav > a {
@@ -44,9 +50,37 @@ nav > a {
     color: #fff;
 }
 
+footer {
+    padding-top: 30px;
+    margin-top: 83px;
+    height: 109px;
+    background: #1A1A2E;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
+footer > p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.footer_nav > a {
+    text-decoration: none;
+    color: #DF6062;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 .hero {
-    /*width: 1920px;*/
     height: 500px;
     background: #494949;
 }
@@ -150,36 +184,9 @@ nav > a {
     padding-left: 10px;
 }
 
-footer {
-    padding-top: 30px;
-    margin-top: 83px;
-    height: 109px;
-    background: #1A1A2E;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
 
-footer > p {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.footer_nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-}
-.footer_nav > a {
-    text-decoration: none;
-    color: #DF6062;
-}
-
-@media (max-width: 430px) {
+/* адаптивка */
+@media (max-width: 431px) {
     .container_header {
         height: 120px;
         justify-content: center;
@@ -206,6 +213,7 @@ footer > p {
     }
     nav {
         font-size: 12px;
+        gap: 40px;
     }
     footer {
         height: 210px;
