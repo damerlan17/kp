@@ -1,0 +1,19 @@
+section > div {
+    margin: 48px 0;
+}
+
+section > div:nth-child(1) > span {
+    font-weight: bold;
+}
+
+section > div:nth-child(1) > span > a {
+    text-decoration: none;
+    color: #DF6062;
+    font-weight: bold;
+}
+
+.img_mang_info {
+    width: 351px;
+    height: 525px;
+}
+
