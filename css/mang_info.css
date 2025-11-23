@@ -200,8 +200,14 @@ section > div:nth-child(1) > span > a {
 }
 
 ul {
+    display: flex;
     margin: 35px;
     color: #777777;
+    flex-direction: column;
+    gap: 18px;
+}
+img {
+    box-shadow: 5px 5px 15px rgb(192 192 192 / 50%);
 }
 /* адаптивка */
 
