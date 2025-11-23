@@ -1,4 +1,94 @@
-section > div {
+/* |||| header, nav, body, footer |||||||Хотел в базовый шаблон сделать но адапивгость слетает( ||||||||||||||||||||| */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #F5F5F5;
+}
+
+.container {
+    height: 71px;
+    background: #1A1A2E;
+}
+
+.container_header {
+    margin: 0 auto;
+    width: 95%;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_width {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.logo {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav {
+    width: 415px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    padding-top: 30px;
+    margin-top: 83px;
+    height: 109px;
+    background: #1A1A2E;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer > p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.footer_nav > a {
+    text-decoration: none;
+    color: #DF6062;
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+.catalog > a {
+    font-weight: bold;
+    color: #DF6062;
+    text-decoration: none;
+}
+
+section > div:nth-child(1) {
     margin: 48px 0;
 }
 
@@ -13,8 +103,144 @@ section > div:nth-child(1) > span > a {
 }
 
 .img_mang_info {
-    width: 351px;
-    height: 525px;
+    width: 19vw;
+    height: 27vw;
+    min-width: 200px;
+    min-height: 300px;
 }
 
-/*
+.title_name > p:first-child {
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.title_name > p:last-child {
+    font-size: 20px;
+}
+
+.title_name > p {
+    padding-top: 10px;
+}
+
+.mang_info_flex {
+    padding-top: 23px;
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+}
+
+.line_slaughtering {
+    width: 9vw;
+    border: #D9D9D9 1px solid;
+
+}
+
+.slaughtering {
+    color: #777777;
+}
+
+.line_slaughtering1 {
+    width: 60vw;
+    border: #d9d9d9 1px solid;
+}
+
+.top_mang_info1 {
+    display: flex;
+    padding-top: 55px;
+    gap: 15px;
+}
+
+.top_mang_info {
+    display: flex;
+    padding-top: 40px;
+    gap: 15px;
+}
+
+.strip {
+    background: #ff6b6b;
+    width: 94.95vw;
+    height: 3px;
+    margin: 15px 0;
+}
+
+.title_block2 {
+    margin-top: 160px;
+}
+
+.title_block2 > p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 47px;
+}
+
+.title_block2 > p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 47px;
+}
+
+.plot > p {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #777777;
+}
+
+.main_characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main_characters > div > img{
+    width: 210px;
+    height: 210px;
+}
+
+ul {
+    margin: 35px;
+    color: #777777;
+}
+/* адаптивка */
+
+@media (max-width: 431px){
+    .container_header {
+        height: 120px;
+        justify-content: center;
+        align-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        height: 120px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    nav {
+        font-size: 12px;
+        gap: 40px;
+    }
+
+    .img_mang_info {
+        width: 95vw;
+        height: 124vw;
+    }
+
+    .line_slaughtering1 {
+        width: 74vw;
+        border: #d9d9d9 1px solid;
+    }
+
+    .main_characters {
+        justify-content: space-around;
+    }
+
+    footer {
+        height: 210px;
+    }
+}
