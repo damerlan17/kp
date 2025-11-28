@@ -82,11 +82,11 @@ color: #DF6062;
 
 .popular_block {
     text-align: center;
-    width: 260px;
-    height: 480px;
+    width: 240px;
+    height: 460px;
     background: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 7px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -142,7 +142,7 @@ color: #DF6062;
 
 .sidebar {
     background: #fff;
-    width: 280px;
+    width: 20%;
     height: 1046px;
     margin: 50px;
     border-radius: 10px;
@@ -161,6 +161,68 @@ color: #DF6062;
     width: 177px;
     height: 177px;
     border-radius: 90px;
+}
+
+.sidebar > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sidebar > div > p:first-child {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.sidebar > div > p:nth-child(2) {
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sidebar > div > a {
+     margin-top: 46px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ }
+
+.sidebar > div > a:nth-child(3) {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 7px;
+    width: 185px;
+    height: 55px;
+    background: #ff6b6b;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.library {
+    display: flex;
+    width: 79%;
+    height: 1%;
+    background: white;
+    margin: 50px 0 0;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 44px;
+}
+
+.library > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 /* адаптивка */
