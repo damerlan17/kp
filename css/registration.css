@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 71px;
+    height: 100px;
     background: #1A1A2E;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-    width: 415px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,8 +78,6 @@ footer > p {
     text-decoration: none;
     color: #DF6062;
 }
-
-
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 form {
