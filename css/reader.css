@@ -81,34 +81,6 @@ footer > p {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-.popular_block {
-    text-align: center;
-    width: 240px;
-    height: 460px;
-    background: white;
-    border-radius: 10px;
-    padding: 7px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.popular_block > img {
-    width: 220px;
-    height: 280px;
-}
-
-.popular_block > p {
-    font-size: 15px;
-    font-weight: 400;
-    color: #a2a2a2;
-}
-
-.popular_block > p, h4 {
-    padding-left: 10px;
-}
-
 .line {
     width: 130px;
     height: 7px;
@@ -153,9 +125,16 @@ footer > p {
     padding-left: 19px;
 }
 
-.sidebar > a {
+li > a {
     text-decoration: none;
+}
 
+li:nth-child(1) > a {
+    color: #fff;
+}
+
+.no-bullets {
+    list-style-type: none;
 }
 
 .sidebar > img {
@@ -170,6 +149,7 @@ footer > p {
     flex-direction: column;
     margin-top: 25px;
     align-items: flex-start;
+    font-weight: 400;
 }
 
 .sidebar > div > p:first-child {
@@ -177,25 +157,33 @@ footer > p {
     font-weight: bold;
 }
 
-.sidebar > div > a {
+li {
     margin-top: 46px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
-.sidebar > div > a {}
+.sidebar > div > p:nth-child(2) {
+    font-weight: bold;
+    color: #777;
+    margin-top: 26px;
+}
 
-.sidebar > div > a:nth-child(3) {
+li:nth-child(1) {
     font-size: 16px;
     color: #fff;
     border-radius: 7px;
-    width: 185px;
-    height: 55px;
+    width: 10vw;
+    height: 3vw;
     background: #ff6b6b;
-    text-align: center;
-    padding-top: 18px;
+    padding-top: 10px;
+    padding-right: 55px;
+    margin-top: 20px;
 }
+
 
 .library {
     display: flex;
@@ -230,6 +218,36 @@ footer > p {
 a {
     text-decoration: none;
     color: #000000;
+}
+@media (max-width: 1790px) {
+    .flex_library {
+        display: flex;
+        gap: 1%;
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: 1%;
+        padding-bottom: 27px;
+    }
+
+    .library {
+        display: flex;
+        width: 100%;
+        height: 1%;
+        background: white;
+        margin: 50px 0 0;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 44px;
+    }
+    li:nth-child(1) {
+
+        width: 92vw;
+        height: 4vw;
+        min-height: 42px;
+    }
 }
 
 /* адаптивка */
