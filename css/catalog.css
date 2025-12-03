@@ -40,7 +40,7 @@ nav {
     width: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -198,6 +198,7 @@ select {
     min-width: 110px;
     min-height: 50px;
     border-radius: 10px;
+    background: #ffffff;
 }
 
 label {
@@ -210,6 +211,7 @@ main > div:nth-child(3) {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
 }
 
 main > div:nth-child(4) {
@@ -244,6 +246,7 @@ main > div:nth-child(4) > p:nth-child(1) > a {
         width: 74vw;
         margin-top: 68px;
     }
+
     main > div:nth-child(3) {
         display: flex;
         flex-wrap: wrap;
@@ -251,9 +254,11 @@ main > div:nth-child(4) > p:nth-child(1) > a {
         gap: 78px;
         justify-content: center;
     }
+
     main > div:nth-child(4) {
         margin-top: 50px;
     }
+
     form {
         margin-top: 30px;
     }
@@ -263,6 +268,7 @@ main > div:nth-child(4) > p:nth-child(1) > a {
     form {
         flex-wrap: nowrap;
     }
+
     main > div:nth-child(2) {
         min-height: 305px;
         width: 50vw;
@@ -272,7 +278,36 @@ main > div:nth-child(4) > p:nth-child(1) > a {
     }
 }
 
-@media (max-width: 431px){
+@media (max-width: 781px) {
+    nav {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container_header {
+        margin: 0 auto;
+        width: 95%;
+        height: 71px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero_detail {
+        text-align: center;
+        font-size: 16px;
+        padding-top: 30px;
+    }
+    .hero_title {
+        text-align: center;
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 431px) {
     .container_header {
         height: 120px;
         justify-content: center;
@@ -302,7 +337,19 @@ main > div:nth-child(4) > p:nth-child(1) > a {
 
     nav {
         font-size: 12px;
-        gap: 40px;
+        gap: 25px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 34px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(1) {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 54px;
     }
 
     .img_mang_info {

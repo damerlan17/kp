@@ -40,7 +40,7 @@ nav {
     width: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -151,14 +151,35 @@ a {
     color: #DF6062;
 }
 
+button > a {
+    color: #fff;
+}
+
+@media (max-width: 780px) {
+    .container_header {
+        margin: 0 auto;
+        width: 95%;
+        height: 71px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 581px) {
     .container_header {
-        height: 120px;
+        margin: 0 auto;
+        width: 95%;
+        height: 71px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
-        gap: 15px;
     }
-
     .form-registration {
         width: 400px;
         height: 880px;

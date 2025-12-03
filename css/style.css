@@ -40,7 +40,7 @@ nav {
     width: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -185,6 +185,37 @@ footer > p {
     padding-left: 10px;
 }
 
+@media (max-width: 780px) {
+    nav {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container_header {
+        margin: 0 auto;
+        width: 95%;
+        height: 71px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero_detail {
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 30px;
+    }
+    .hero_title {
+        color: #fff;
+        text-align: center;
+        font-size: 34px;
+    }
+
+}
+
 
 /* адаптивка */
 @media (max-width: 431px) {
@@ -221,7 +252,8 @@ footer > p {
 
     nav {
         font-size: 12px;
-        gap: 40px;
+        gap: 25px;
+        justify-content: center;
     }
 
     footer {
