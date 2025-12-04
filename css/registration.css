@@ -124,6 +124,8 @@ input {
     margin-top: 15px;
     border-radius: 10px;
     border: solid black 1px;
+    padding: 15px;
+    font-size: 20px;
 }
 
 .checkbox_form {
