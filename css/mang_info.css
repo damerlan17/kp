@@ -125,6 +125,12 @@ section > div:nth-child(1) > span > a {
     min-width: 200px;
     min-height: 77px;
     border-radius: 10px;
+    transition: scale 0.2s 0.3s;
+}
+
+
+.read_button:hover {
+    scale: 1.1;
 }
 
 .title_name > p:first-child {

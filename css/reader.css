@@ -184,6 +184,29 @@ li:nth-child(1) {
     margin-top: 20px;
 }
 
+li, a {
+    transition: background-color 0.2s 0.3s, width 0.2s, height 0.2s 0.2s, padding 0.2s 0.3s, border-radius 0.2s 0.3s,
+    color 0.2s 0.3s;
+}
+
+li:hover {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 7px;
+    width: 185px;
+    height: 55px;
+    background: #FF914D;
+    text-align: center;
+    padding-top: 18px;
+}
+
+li:active {
+    background: #ff0000;
+}
+
+a:hover {
+    color: #fff;
+}
 
 .library {
     display: flex;
@@ -243,7 +266,6 @@ a {
         padding-bottom: 44px;
     }
     li:nth-child(1) {
-
         width: 92vw;
         height: 4vw;
         min-height: 42px;

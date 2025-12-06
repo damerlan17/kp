@@ -109,6 +109,14 @@ footer > p {
     padding-left: 10px;
 }
 
+.popular_block {
+    transition: scale 0.2s 0.3s;
+}
+
+.popular_block:hover {
+     scale: 1.1;
+ }
+
 .line {
     width: 130px;
     height: 7px;
@@ -155,7 +163,6 @@ footer > p {
 
 .sidebar > a {
     text-decoration: none;
-
 }
 
 .sidebar > img {
@@ -200,6 +207,25 @@ footer > p {
     background: #ff6b6b;
     text-align: center;
     padding-top: 18px;
+}
+
+.sidebar > div > a {
+    transition: background-color 0.2s 0.3s, width 0.2s, height 0.2s 0.2s, padding 0.2s 0.3s;
+}
+
+.sidebar > div > a:hover {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 7px;
+    width: 185px;
+    height: 55px;
+    background: #FF914D;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.sidebar > div > a:active {
+    background: #ff0000;
 }
 
 .library {

@@ -160,6 +160,11 @@ footer > p {
     gap: 20px;
     flex-direction: column;
     align-items: flex-start;
+    transition: scale 0.2s 0.3s;
+}
+
+.popular_block:hover {
+    scale: 1.1;
 }
 
 .popular_block > img {

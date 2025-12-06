@@ -119,6 +119,7 @@ label {
 }
 
 input {
+    text-align: center;
     width: 480px;
     height: 55px;
     margin-top: 15px;
@@ -126,6 +127,24 @@ input {
     border: solid black 1px;
     padding: 15px;
     font-size: 20px;
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+input:hover {
+    border-color: #FF914D;
+}
+
+input:hover::placeholder {
+    color: #FF914D;
+}
+
+input:focus::placeholder {
+    color: #ff0000;
 }
 
 .checkbox_form {
@@ -142,8 +161,16 @@ button {
     color: white;
     border: none;
     border-radius: 10px;
+    transition: 0.2s;
 }
 
+button:hover {
+    background: #FF914D;
+}
+
+button:active {
+    background: #ff0000;
+}
 p {
     font-weight: bold;
 }

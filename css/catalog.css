@@ -86,23 +86,23 @@ main {
     flex-wrap: wrap;
 }
 
-main > div:nth-child(1) {
+main > section:nth-child(1) > div:nth-child(1) {
     text-align: center;
 }
 
-main > div:nth-child(1) > p:nth-child(1) {
+main > section:nth-child(1) > div:nth-child(1) > p:nth-child(1) {
     text-align: center;
     font-size: 42px;
     font-weight: bold;
     margin-top: 54px;
 }
 
-main > div:nth-child(1) > p:nth-child(2) {
+main > section:nth-child(1) > div:nth-child(1) > p:nth-child(2) {
     font-size: 21px;
     margin-top: 34px;
 }
 
-main > div:nth-child(2) {
+main > section:nth-child(1) > div:nth-child(2) {
     width: 96vw;
     height: 15vh;
     background: #ffffff;
@@ -122,6 +122,12 @@ main > div:nth-child(2) {
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    transition: scale 0.2s 0.3s;
+}
+
+
+.popular_block:hover {
+    scale: 1.1;
 }
 
 .popular_block > img {
@@ -206,7 +212,7 @@ label {
     font-size: 15px;
 }
 
-main > div:nth-child(3) {
+main > section:nth-child(2) > div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -214,13 +220,13 @@ main > div:nth-child(3) {
     justify-content: center;
 }
 
-main > div:nth-child(4) {
+main > section:nth-child(3) > div {
     display: flex;
     gap: 10px;
     margin-top: 35px;
 }
 
-main > div:nth-child(4) > p {
+main > section:nth-child(3) > div > p {
     border-radius: 10px;
     width: 40px;
     height: 40px;
@@ -229,7 +235,7 @@ main > div:nth-child(4) > p {
     padding-top: 10px;
 }
 
-main > div:nth-child(4) > p:nth-child(1) {
+main > section:nth-child(3) > div > p:nth-child(1) {
     color: white;
     border-radius: 10px;
     background-color: #ff6b6b;
@@ -237,8 +243,14 @@ main > div:nth-child(4) > p:nth-child(1) {
     height: 40px;
 }
 
-main > div:nth-child(4) > p:nth-child(1) > a {
+main > section:nth-child(3) > div > p:nth-child(1) > a {
     color: white;
+}
+
+main > section:nth-child(3) > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (max-width: 1300px) {
