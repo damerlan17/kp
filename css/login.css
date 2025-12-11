@@ -1,3 +1,5 @@
+@import url("font.css");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: sans-serif, 'Inter';
     background: #F5F5F5;
 }
 
